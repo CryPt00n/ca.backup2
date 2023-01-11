@@ -13,6 +13,9 @@
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" icon="shield">
 
 <CHANGES>
+###2023.01.11  
+- Change method from archive packaging to copy
+  
 ###2022.12.13
 - Add deprecation banner
 
