@@ -177,7 +177,7 @@ $fileExt = ($backupOptions['compression']) == "yes" ? ".tar.gz" : ".tar";
 logger("$logLine appData from $source to $destination"); backupLog("$logLine appData from $source to $destination");
 if ( ! $restore ) {
 	if ( is_dir($source) ) {
-		$command = "cd ".escapeshellarg($source)." && /usr/bin/cp ".escapeshellarg("{$destination}/CA_backup$fileExt")." $rsyncExcluded * >> {$communityPaths['backupLog']} 2>&1 & echo $! > {$communityPaths['backupProgress']}";
+		$command = "cd ".escapeshellarg($source)." && /usr/bin/tar -xvaf ".escapeshellarg("{$destination}/CA_backup$fileExt")." $rsyncExcluded * >> {$communityPaths['backupLog']} 2>&1 & echo $! > {$communityPaths['backupProgress']}";
 		exec("mkdir -p ".escapeshellarg($destination));
 		exec("chmod 0777 ".escapeshellarg($destination));
 	} else {
