@@ -3,7 +3,7 @@
 <!ENTITY name      "ca.backup2">
 <!ENTITY author    "Andrew Zawadzki">
 <!ENTITY version   "2023.01.11">
-<!ENTITY md5       "3aeaade7beb849c46f4e5f5e6b4d823f">
+<!ENTITY md5       "6d64bb07e4435dcffaad17c15e62c8b5">
 <!ENTITY launch    "Settings/BackupMainV2">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "CryPt00n/ca.backup2">
@@ -110,8 +110,8 @@ rm -f $(ls /boot/config/plugins/&name;/&name;*.txz 2>/dev/null &#124; grep -v '&
 <!--
 The 'source' file.
 -->
-<FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.tar" Run="upgradepkg --install-new">
-<URL>https://raw.github.com/&github;/master/archive/&name;-&version;-x86_64-1.tar</URL>
+<FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
+<URL>https://raw.github.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
 <MD5>&md5;</MD5>
 </FILE>
 
